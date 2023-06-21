@@ -1,3 +1,5 @@
+//from new development branch
+
 import { Head } from "$fresh/runtime.ts";
 import About from "../components/base/other/about.tsx";
 import Skills from "../components/base/other/skill.tsx";
