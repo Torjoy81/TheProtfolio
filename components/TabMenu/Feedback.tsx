@@ -34,7 +34,7 @@ export default function FeedBack() {
     if (passes) {
       formError.value = {};
       const rsponse = await fetch(
-        "https://tarekulprotfolio-97.deno.dev/api/user",
+        "https://tarekulprotfolio-97-nbje5944zcr0.deno.dev/api/user",
         {
           method: "POST",
           headers: {
