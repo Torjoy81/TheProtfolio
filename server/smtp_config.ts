@@ -3,10 +3,10 @@ import { SmtpClient } from "smtp";
 const client = new SmtpClient();
 
 await client.connectTLS({
-  hostname: "mail.tu-chemnitz.de",
+  hostname: "smtp.gmail.com",
   port: 465,
-  username: <string> Deno.env.get("USER_ID"),
-  password: <string> Deno.env.get("PASS"),
+  username: <string> Deno.env.get("USER_ID_EMAIL"),
+  password: <string> Deno.env.get("PASSWORD"),
 });
 
 export const sendMail = async (toEmail: string, fullName: string) => {
