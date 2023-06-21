@@ -1,6 +1,6 @@
 import { Handlers } from "$fresh/server.ts";
 import usersModel from "../../model/user.model.ts";
-import { sendMail } from "../../server/smtp_config.ts";
+// import { sendMail } from "../../server/smtp_config.ts";
 
 export const handler: Handlers = {
   async GET(_, _ctx) {
@@ -12,7 +12,7 @@ export const handler: Handlers = {
     const { fullname, comment, email } = await req.json();
 
     try {
-      await sendMail(email, fullname);
+      // await sendMail(email, fullname);
       await usersModel.insertOne({
         fullName: <string> fullname,
         comment: <string> comment,
