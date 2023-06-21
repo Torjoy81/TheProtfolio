@@ -33,13 +33,16 @@ export default function FeedBack() {
     });
     if (passes) {
       formError.value = {};
-      const rsponse = await fetch("http://localhost:8000/api/user", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const rsponse = await fetch(
+        "https://tarekulprotfolio-97.deno.dev/api/user",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userComment),
         },
-        body: JSON.stringify(userComment),
-      });
+      );
       const data = await rsponse.json();
       setUserComment({ fullname: "", comment: "", email: "" });
     } else {
