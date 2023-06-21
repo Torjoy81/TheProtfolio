@@ -1,3 +1,5 @@
+//from new development branch
+
 import { Head } from "$fresh/runtime.ts";
 import About from "../components/base/other/about.tsx";
 import Skills from "../components/base/other/skill.tsx";
@@ -10,7 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>Tarek's Protfolio</title>
+        <link rel={"icon"} href={"/image/prolog.png"} type={"image/x-icon"} />
       </Head>
       <BasicLayout>
         <About />
