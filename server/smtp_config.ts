@@ -2,9 +2,9 @@ import { SmtpClient } from "smtp";
 
 const client = new SmtpClient();
 
-await client.connectTLS({
+await client.connect({
   hostname: "smtp.gmail.com",
-  port: 465,
+  port: 25,
   username: <string> Deno.env.get("USER_ID_EMAIL"),
   password: <string> Deno.env.get("PASSWORD"),
 });
