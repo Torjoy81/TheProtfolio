@@ -4,7 +4,7 @@ const client = new SmtpClient();
 
 await client.connectTLS({
   hostname: "mail.tu-chemnitz.de",
-  port: 587,
+  port: 465,
   username: <string> Deno.env.get("USER_ID"),
   password: <string> Deno.env.get("PASS"),
 });
