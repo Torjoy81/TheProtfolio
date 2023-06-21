@@ -12,7 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>Tarek's Protfolio</title>
+        <link rel={"icon"} href={"/image/prolog.png"} type={"image/x-icon"} />
       </Head>
       <BasicLayout>
         <About />
