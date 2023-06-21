@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>Tarek's Portfolio</title>
+        <link
+          rel={"icon"}
+          href={"/image/protfolio.png"}
+          type={"image/x-icon"}
+        />
       </Head>
       <BasicLayout>
         <About />
